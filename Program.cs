@@ -1,8 +1,29 @@
-﻿namespace Assignment_OOP_Session01
+﻿using Common;
+using System.ComponentModel;
+
+namespace Assignment_OOP_Session01
 {
+    //What You Can Write Inside Namespace ?
+    //1. Class
+    //2. Struct
+    //3. Interface
+    //4. Enum
+
+
+    //    What You Can Write Inside Namespace?
+    //1. Class
+    //2. Struct
+    //3. Interface
+    //4. Enum
+
+
+
+
+
     internal class Program
     {
 
+        #region Exp Handling
         static void DoSomeCode()
         {
             try
@@ -57,11 +78,7 @@
 
         }
 
-
-
-
-
-
+        #endregion
 
 
 
@@ -70,25 +87,44 @@
         static void Main(string[] args)
         {
 
+            #region Exp Handling
             //DoSomeCode();
 
-            try
-            {
-                DoSomeProtictevCode();
-                throw   new Exception();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            finally
-            {
-                //Close, Delete,Release
-                //Open File
-                //Conection With Database
-            }
-            Console.WriteLine(  "After Try Catch");
+            //try
+            //{
+            //    DoSomeProtictevCode();
+            //    throw new Exception();
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+            //finally
+            //{
+            //    //Close, Delete,Release
+            //    //Open File
+            //    //Conection With Database
+            //}
+            //Console.WriteLine("After Try Catch"); 
+            #endregion
+
+
+            #region Access Modifiers
+
+
+            TypeA typeA = new  TypeA(); // vailed
+
+            //TypeB typeB = new TypeB(); //invailed
+
+            //typeA.x=10 //invaild
+            //typeA.y = 10; // invaild
+            //typeA.z = 10;//vaild
+            #endregion
+
+
         }
+
+
     }
 
 
