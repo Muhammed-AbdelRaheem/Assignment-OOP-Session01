@@ -147,7 +147,7 @@ namespace Assignment_OOP_Session01
             #region Access Modifiers
 
 
-            TypeA typeA = new  TypeA(); // vailed
+            TypeA typeA = new TypeA(); // vailed
 
             //TypeB typeB = new TypeB(); //invailed
 
@@ -211,8 +211,8 @@ namespace Assignment_OOP_Session01
             #region Ex04
 
 
-            employee employee =  new employee();
-            employee.name = "mohamed";
+            //employee employee =  new employee();
+            //employee.name = "mohamed";
             //employee.permession = Permession.Write;
 
             //employee.permession = (Permession)3;//Delete,Excute
@@ -262,12 +262,41 @@ namespace Assignment_OOP_Session01
             //    if not exicte =>add 
             //    do OR Operation
 
-            employee.permession = employee.permession | Permession.Read;
-            Console.WriteLine(employee.permession);
+            //employee.permession = employee.permession | Permession.Read;
+            //Console.WriteLine(employee.permession);
 
             #endregion
 
 
+
+
+            #endregion
+
+            #region Struct
+
+            Point P1;
+            //Console.WriteLine( P1.x ); // invaild
+
+
+            //P1.x = 10;
+            //P1.y = 20;
+            //Console.WriteLine(P1.x);
+            //Console.WriteLine(P1.y);
+
+            //P1 = new Point(10,20);
+
+            ////new => its just only for constructor selection 
+            ////thats will initialize attribute of struct 
+
+            ////Console.WriteLine($"x = { P1.x}");
+            ////Console.WriteLine($"y = {P1.y}");
+            //////Console.WriteLine(P1);
+            ////Console.WriteLine(P1.ToString()); //(10,20) ---- boxing / unboxing
+
+
+            //Point p2 = new(1,2);
+            //Console.WriteLine(p2.x);
+            //Console.WriteLine(p2.y);
 
 
             #endregion
